@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+/* Шапка сайта */
+
+header {
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 70%;
+   padding-left: 15%;
+   padding-right: 15%;
+   height: 110px;
+}
+
+header img{
+    height: 80px;
+    width: 15%;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 28px;
+}
+
+header ul li{
+    list-style: none;
+    display: list-item;
+}
+
+body{
+  background: url(img/1618483966_9-p-fon-turizm-10.jpg);
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+header input[type=search] {
+   border-radius: 5px;
+}
+
+/* Бронь */
+
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+ }
+
+ .post-item {
+    padding: 15px;
+    cursor: pointer;
+ }
+ .post-item * {
+    transition: .3s linear;
+ }
+ .item-content {
+    background: black;
+    padding: 40px;
+    height: 110px;
+ }
+
+ .item-icon.photo:before {
+    content: "\f030";
+ }
+
+ .item-icon.video:before {
+    content: "\f03d";
+ }
+
+ .item-icon.gift:before {
+    content: "\f06b";
+ }
+ 
+ .item-icon.group:before {
+    content: "\f0c0";
+ }
+
+ .item-icon.tree:before {
+    content: "\f1bb";
+ }
+
+ .item-icon.anchor:before {
+    content: "\f13d";
+ }
+ 
+ .post-item:hover .item-icon, .post-item:hover .item-body h3, .post-item:hover .item-body p {
+    transform: translateY(-8px);
+ }
+
+ .item-body {
+    color: #F5E2CD;
+    font-size: 14px;
+ }
+
+ .item-body h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition-delay: .05s;
+ }
+
+ .item-body p {
+    transition-delay: .1s;
+ }
+
+ .item-footer {
+    padding-top: 15px;
+ } 
+
+ .link {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    padding-right: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #F5E2CD;
+ }
+
+ .link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: .125rem;
+    margin: auto;
+    background:white;
+    transform: scaleX(.2);
+    transform-origin: left center;
+    z-index: 0;
+    transition: .6s cubic-bezier(.6, .01, 0, 1);
+ }
+
+ .link span {
+    display: inline-block;
+    position: relative;
+    transform: translateX(-200%);
+    transition: .6s cubic-bezier(.6, .01, 0, 1);
+ }
+
+ .post-item:hover .link span {
+    transform: translateX(0%);
+ }
+
+ .post-item:hover .link:before {
+    transform-origin: right center;
+ }
+
+ @media (min-width: 768px) {
+    .post-item {
+       flex-basis: 50%;
+       flex-shrink: 0;
+    }
+ }
+
+ @media (min-width: 960px) {
+    .post-item {
+       flex-basis: 33.333333333%;
+    }
+ }
+
+/* Отзывы */
+
+h2.title{
+    font-size: 1em; 
+    color: #5a5a5a; 
+    text-align: center; 
+}
+
+h2.title:before {
+    content: '';
+    display: block;
+    height: 1px; 
+    background: #f66d52; 
+    width: 150px; 
+    margin: 0 auto 10px; 
+	transition: 1s; 
+}
+h2.title:hover:before {
+    width: 250px; 
+	transition: ease-out 1s; 
+}
+
+h2.title:after {
+   content: '';
+   display: block;
+   height: 1px; 
+   background: #f66d52; 
+   width: 150px; 
+   margin: 10px auto 0; 
+   transition: 1s; 
+}
+
+h2.title:hover:after {
+   width: 250px; 
+   transition: ease-out 1s; 
+}
+
+.otzev {
+   padding: 38px 0;
+   color: #2f2f2f;
+   text-align: center;
+   background-color: white;
+  }
+
+  .otzev2{
+   max-width: 1200px;
+   margin: auto;
+   overflow: hidden;
+   padding: 0 20px;
+  }
+  
+  .otzev_shapka {
+   width: 195px;
+   height: 3px;
+   background: black;
+   margin: 23px auto;
+  }
+  
+  .sagestim-lonials{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+
+  .vemotau-vokusipol{
+   flex: 33.33%;
+   max-width: 33.33%;
+   box-sizing: border-box;
+   padding: 15px;
+  }
+
+  .testimonial {
+   background: #f9f4f4;
+   padding: 28px;
+  }
+
+  .testimonial img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+  }
+
+  .gecedanam{
+   font-size: 20px;
+   text-transform: uppercase;
+   margin: 20px 0;
+  }
+
+  .zvezda{
+   color: orange;
+   margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width:960px) {
+  .vemotau-vokusipol{
+   flex: 100%;
+   max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .vemotau-vokusipol{
+   flex: 100%;
+   max-width: 100%;
+  }
+  }
+
+/* Форма поиска */
+fieldset {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border: 2px solid black;
+}
+
+select {
+   font-size: 20px;
+}
+
+form {
+   text-align: center;
+}
+
+label {
+   color: #2f2f2f;
+}
+
+.Search{
+   margin-top: 1%;
+}
+
+.Region{
+   margin-top: 1%;
+}
+
+.Hike_date{
+   margin-top: 1%;
+}
+
+.Members{
+   margin-top: 1%;
+}
+
+.Level{
+   margin-top: 1%;
+}
+
+.Level input{
+   justify-content: space-between;
+}
+
+input[type=submit] {
+   font-size: 20px;
+   margin-top: 20px;
+}
+
+/* Акции */
+.action {
+   display: flex;
+   margin-left: 10%;
+}
+
+.Promotions{
+   margin-top: 1%;
+}
+
+h1 {
+   text-align: center;
+   font-size: 64px;
+}
+
+.act {
+   width: 44%;
+   text-align: center;
+   border: 2px solid black;
+}
+
+.act img {
+   width: 70%;
+   height: 60%;
+   margin-top: 4%;
+   border-radius: 10px;
+   border-style: inherit;
+}
+
+.act p{
+   font-size: 30px;
+   font-weight: 300;
+}
+
+.act h2 {
+   font-size: 36px;
+}
+
+.act button {
+   font-size: 20px;
+   margin-top: 3%;
+}
+
+.act a{
+   text-decoration: none;
+   color: black;
+}
+
+/* Подписка */
+input[type=email] {
+   font-size: 20px;
+   border-radius: 5px;
+}
+
+input[type=submit] {
+   border-radius: 5px;
+   background-color: #3A1C03;
+   color: white;
+}
+
+/* Подвал */
+
+footer {
+   width: 100%;
+   margin-top: 3%;
+   background-color: #3A1C03;
+}
+
+.footers {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 1%;
+   padding-top: 1%;
+   width: 70%;
+   margin: auto;
+}
+
+.social img {
+   width: 40px;
+   height: 40px;
+   margin-top: 10px;
+}
+
+footer p {
+   text-align: center;
+   font-size: 22px;
+   color: white;
+} 
